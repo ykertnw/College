@@ -740,3 +740,92 @@ main, .tomato-content-section, .product-detail-section, .vision-mission, .activi
 @media (max-width: 768px) {
     .form-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Адаптація для планшетів*/
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav ul {
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 12px;
+    }
+
+    .activity-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .activity-card {
+        flex: 0 0 45%;
+        margin-bottom: 30px;
+    }
+
+    .tomato-products-grid, .breeding-program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Адаптація для телефонів */
+@media (max-width: 768px) {
+    
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo img {
+        height: 60px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .info-row, .info-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-text, .info-img {
+        flex: none;
+        width: 100%;
+    }
+
+    .tomato-products-grid, .breeding-program-grid, .char-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .captcha-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-top-flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Адаптація для дуже маленьких екранів */
+@media (max-width: 480px) {
+    .activity-card {
+        flex: 0 0 100%;
+    }
+    .product-title-name {
+        font-size: 24px;
+    }
+}
